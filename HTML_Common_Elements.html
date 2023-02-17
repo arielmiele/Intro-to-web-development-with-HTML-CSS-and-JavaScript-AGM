@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common HTML Elements</title>
+</head>
+
+<body>
+    <!-- div | division of a page -->
+    <div>
+        <h1>This is a heading in a div element.</h1>
+        <p>This is some text in a div element.</p>
+    </div>
+
+    <!-- Structural HTML5 Elements -->
+    <!-- section -->
+    <section>
+        <h1>Section 1</h1>
+        <p>This is text related to section 1.</p>
+    </section>
+
+    <section>
+        <h1>Section 2</h1>
+        <p>This is some text related to section 2.</p>
+    </section>
+
+    <!-- article | is more specific than a section -->
+    <article>
+        <h1>Article 1</h1>
+        <p>This paragraph is related only to arcticle one and is meaninfgul on its own, without the rest of the code.
+        </p>
+    </article>
+
+    <article>Article 2</article>
+    <p>This paragrap is related only to article two and is meaningful on its own, without the rest of the code.</p>
+
+    <!-- header & footer -->
+    <article>
+        <header>
+            <h1>G8 summit protests</h1>
+        </header>
+        <div>
+            <section id="public">
+                <h1>Public demonstrations</h1>
+                <p>...more...</p>
+            </section>
+            <section id="control">
+                <h1>Crowd control</h1>
+                <p>...more...</p>
+            </section>
+        </div>
+        <footer>
+            <p>Published today.</p>
+        </footer>
+    </article>
+
+    <!-- HTML5 Elements for Grouping -->
+    <!-- aside -->
+    <p>This is a paragraph of text that casually mentions a concept and continues explaining the main point</p>
+    <aside>
+        <h4>Concept Definition</h4>
+        <p>This goes over the concept mentioned in the paragraph to provide readers with further explanation if needed.
+            However, it does not detract from the main content.</p>
+    </aside>
+
+    <!-- figure & figcaption -->
+    <figure>
+        <img src="images/IDSNlogo.png" width="500" height="500" />
+        <figcaption>IBM Developer Skills Network Logo</figcaption>
+    </figure>
+
+    <!-- Navigational Elements -->
+    <!-- nav -->
+    <nav>
+        <div class="menu">
+            <a href="#">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="register.html">Register</a> |
+            <a href="#">Sign in</a>
+        </div>
+    </nav>
+
+    <!-- Embedding Content -->
+    <!-- audio -->
+    <audio>
+        <source src="soundtrack.mp3" type="audio/mpeg">
+        <source src="soundtrack.ogg" type="audio/ogg">
+        Your browser does not support the audio formats provided.
+    </audio>
+
+    <!-- canvas -->
+    <canvas>
+        Your browser does not support the canvas tag.
+    </canvas>
+    <script>
+        var canvas = document.getElementsByTagName("canvas")[0];
+        var context = canvas.getContext("2d");
+        context.fillRect(0, 0, 100, 100);
+    </script>
+
+    <!-- embed -->
+    <embed type="text/html" src="another_webpage.html">
+
+    <!-- track -->
+    <video>
+        <source src="common_html_elements.mp4" type="video/mp4">
+        <track src="english_subtitles.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="spanish_subtitles.vtt" kind="subtitles" srclang="es" label="Spanish">
+    </video>
+    
+</body>
+
+</html>
